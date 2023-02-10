@@ -6,23 +6,23 @@
 /*   By: sdanel <sdanel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/23 14:03:16 by sdanel            #+#    #+#             */
-/*   Updated: 2023/01/06 12:21:57 by sdanel           ###   ########.fr       */
+/*   Updated: 2023/01/18 16:54:09 by sdanel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
 
-int	ft_strlen(char *str)
-{
-	int	i;
+// int	ft_strlen(char *str)
+// {
+// 	int	i;
 
-	i = 0;
-	if (!str)
-		return (0);
-	while (str[i] != '\0')
-		i++;
-	return (i);
-}
+// 	i = 0;
+// 	if (!str)
+// 		return (0);
+// 	while (str[i] != '\0')
+// 		i++;
+// 	return (i);
+// }
 
 char	*ft_strcpy(char *s1, char *s2)
 {

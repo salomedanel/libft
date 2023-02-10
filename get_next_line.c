@@ -6,7 +6,7 @@
 /*   By: sdanel <sdanel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/29 18:05:13 by sdanel            #+#    #+#             */
-/*   Updated: 2023/01/07 14:50:01 by sdanel           ###   ########.fr       */
+/*   Updated: 2023/01/27 19:01:55 by sdanel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -107,7 +107,7 @@ char	*ft_get_line(char *stash, char *line)
 	return (line);
 }
 
-char	*get_next_line(int fd)
+char	*get_next_line(int fd, int boolean)
 {
 	static char	*stash[4096];
 	char		*line;
@@ -116,14 +116,20 @@ char	*get_next_line(int fd)
 	if (fd < 0 || BUFFER_SIZE <= 0)
 		return (0);
 	line = NULL;
+	if (boolean)
+		return (free(stash[fd]), free(line), NULL);
 	stash[fd] = ft_read(fd, stash[fd]);
 	if (stash[fd] == NULL)
+	{
+		free(stash[fd]);
 		return (0);
+	}
 	line = ft_get_line(stash[fd], line);
 	i = ft_strlen(line);
 	stash[fd] = ft_clean_stash(stash[fd], i);
 	return (line);
 }
+
 /*
 int	ma23,278,453 bytes in 5,570 blocksin(void)
 {

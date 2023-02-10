@@ -6,7 +6,7 @@
 /*   By: sdanel <sdanel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/14 12:43:37 by sdanel            #+#    #+#             */
-/*   Updated: 2023/01/11 14:45:20 by sdanel           ###   ########.fr       */
+/*   Updated: 2023/01/27 16:59:43 by sdanel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,7 +70,7 @@ void				ft_lstiter(t_list *lst, void (*f)(void *));
 t_list				*ft_lstmap(t_list *lst, void *(*f)(void *),
 						void (*del)(void *));
 // get_next_line
-char				*get_next_line(int fd);
+char				*get_next_line(int fd, int boolean);
 char				*ft_get_line(char *stash, char *line);
 char				*ft_clean_stash(char *stash, int index);
 char				*ft_read(int fd, char *stash);

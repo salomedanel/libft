@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sdanel <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: sdanel <sdanel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/30 11:18:14 by sdanel            #+#    #+#             */
-/*   Updated: 2022/11/30 11:58:41 by sdanel           ###   ########.fr       */
+/*   Updated: 2023/01/13 11:11:45 by sdanel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,11 +92,6 @@ int	ft_printf(const char *str, ...)
 }
 
 // int	main(void)
-// {
-// 	char *str1 = NULL;
-// 	char c = 'z';
-
-// 	printf("size = %d\n", printf("Une string (%%s) = %s\n", str1));
 // 	ft_printf("size = %d\n", ft_printf("Une string (%%s) = %s\n", str1));
 // 	printf("\n");
 // 	printf("size = %d\n", printf("Un char (%%c) = %c\n", c));
